@@ -12,3 +12,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+nav, body{
+  margin: 0;
+  padding: 0;
+}
+
+nav ul{
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  background-color: brown
+}
+
+nav ul li{
+  display: inline-block;
+  padding: 10px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #ccc9c9
+}
+nav ul li a:hover{
+  color: #fff
+}
