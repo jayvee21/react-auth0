@@ -7,10 +7,14 @@ export default class Nav extends Component {
       <nav>
         <ul>
             <li><Link to="/">Home</Link></li>
-            { isAuthenticated() 
-              ? <li><Link to="/profile">Profile</Link></li>  
-              : ''
-            }
+            { isAuthenticated()  && <li><Link to="/profile">Profile</Link></li>  }
+            <li>
+              <Link to="/public"> Public </Link>
+            </li>
+            <li>
+              { isAuthenticated() && <Link to="/private"> Private </Link> }
+              
+            </li>
             <li><button onClick={ isAuthenticated() ? logout : login }> {isAuthenticated() ? 'Logout' : 'Login'} </button></li>
         </ul>
       </nav>
